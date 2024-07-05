@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cal.css" />
+    <!-- <link rel="stylesheet" href="calculator.js" /> -->
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator-wrap">
+        <div class="cal-top cal-title">Mulch Calculator</div>
+        <div class="cal-inner">
+          <div class="cal-input">
+            <div class="table">
+              <div class="row">
+                <div class="cell"><span>Length</span></div>
+                <div class="cell">
+                  <input type="number" id="cal-length" />
+                </div>
+                <div class="cell">
+                  <select name="length" id="length-unit">
+                    <option value="inch">inch</option>
+                    <option value="foot">foot</option>
+                    <option value="centimeter">centimeter</option>
+                    <option value="meter">meter</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell"><span>Width</span></div>
+                <div class="cell">
+                  <input id="cal-width" type="number" class="cal-width" />
+                </div>
+                <div class="cell">
+                  <select name="width" id="width-unit">
+                    <option value="inch">inch</option>
+                    <option value="foot">foot</option>
+                    <option value="centimeter">centimeter</option>
+                    <option value="meter">meter</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cell"><span>Depth</span></div>
+                <div class="cell">
+                  <input type="number" id="cal-depth" />
+                </div>
+                <div class="cell">
+                  <select name="depth" id="depth-unit">
+                    <option value="inch">inch</option>
+                    <option value="foot">foot</option>
+                    <option value="centimeter">centimeter</option>
+                    <option value="meter">meter</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="cal-btn">
+              <input type="submit" value="calculator" id="btn-cal" />
+              <!-- <button id="btn-clear" class="btn-clear">Clear</button> -->
+              <!-- <button id="btn-calcu" class="btn-cal">Calculate</button> -->
+            </div>
+          </div>
+        </div>
+        <div class="cal-bottom">
+          <div class="cal-answer">
+            <span class="answer"> Answer </span>
+            <p id="areaResult"></p>
+            <!-- <p id="areaResult2"></p> -->
+
+            <!-- <input id="equal" type="" name="acction" /> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>

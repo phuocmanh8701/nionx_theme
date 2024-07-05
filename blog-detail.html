@@ -256,7 +256,7 @@
                         </h4>
                         <form action="" class="comment-form_form">
                           <div class="form-group">
-                            <div class="form-control">
+                            <div class="form-control form-name">
                               <input
                                 type="text"
                                 name="name"
@@ -264,7 +264,7 @@
                                 required=""
                               />
                             </div>
-                            <div class="form-control">
+                            <div class="form-control form-email">
                               <input
                                 type="text"
                                 name="email"
@@ -284,7 +284,7 @@
                                 type="submit"
                                 id="submit"
                                 class="submit-btn"
-                                value="Post Comment"
+                                value="Leave a Comment"
                               />
                             </div>
                           </div>
@@ -311,40 +311,102 @@
                   <div class="widget-lastest-posts">
                     <h4 class="widget-title">Lastest Post</h4>
                     <ul class="widget-lastest-list">
-                      <li class="lastest-item">
-                        <div class="lastest-item-image">
-                          <img src="" alt="">
+                      <li>
+                        <div class="lastest-item">
+                          <div class="lastest-item-image">
+                            <img
+                              src="images/lastest-item-1.png"
+                              alt=""
+                              style="border-radius: 6px"
+                            />
+                          </div>
+                          <div class="lastest-item-content">
+                            <p class="lastest-item-meta">
+                              <a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                26 Mar, 2023
+                              </a>
+                            </p>
+                            <p class="lastest-item-title">
+                              The Complete Web Developer Guideline
+                            </p>
+                          </div>
                         </div>
-                        <div class="lastest-item-content"></div>
                       </li>
-                      <li class="lastest-item"></li>
-                      <li class="lastest-item"></li>
+                      <li>
+                        <div class="lastest-item">
+                          <div class="lastest-item-image">
+                            <img
+                              src="images/lastest-item-1.png"
+                              alt=""
+                              style="border-radius: 6px"
+                            />
+                          </div>
+                          <div class="lastest-item-content">
+                            <p class="lastest-item-meta">
+                              <a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                26 Mar, 2023
+                              </a>
+                            </p>
+                            <p class="lastest-item-title">
+                              The Complete Web Developer Guideline
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="lastest-item">
+                          <div class="lastest-item-image">
+                            <img
+                              src="images/lastest-item-1.png"
+                              alt=""
+                              style="border-radius: 6px"
+                            />
+                          </div>
+                          <div class="lastest-item-content">
+                            <p class="lastest-item-meta">
+                              <a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                26 Mar, 2023
+                              </a>
+                            </p>
+                            <p class="lastest-item-title">
+                              The Complete Web Developer Guideline
+                            </p>
+                          </div>
+                        </div>
+                      </li>
                     </ul>
                   </div>
                   <div class="widget-category">
                     <h4 class="widget-title">Category</h4>
-                    <ul>
-                      <li class="cat-item">
-                        <i class="fa-solid fa-angles-right"></i>Web Development
+                    <ul class="widget-category-list">
+                      <li class="category-list-item">
+                        <i class="fa-solid fa-angles-right"></i>
+                        <a href="#">Web Development</a>
                       </li>
-                      <li class="cat-item">
-                        <i class="fa-solid fa-angles-right"></i>Social Marketing
+                      <li class="category-list-item">
+                        <i class="fa-solid fa-angles-right"></i>
+                        <a href="#">Social Marketing</a>
                       </li>
-                      <li class="cat-item">
-                        <i class="fa-solid fa-angles-right"></i>Technology
+                      <li class="category-list-item">
+                        <i class="fa-solid fa-angles-right"></i>
+                        <a href="#">Technology</a>
                       </li>
-                      <li class="cat-item">
-                        <i class="fa-solid fa-angles-right"></i>Business &
-                        Finance
+                      <li class="category-list-item">
+                        <i class="fa-solid fa-angles-right"></i>
+                        <a href="#">Business & Finance</a>
                       </li>
-                      <li class="cat-item">
-                        <i class="fa-solid fa-angles-right"></i>Digital Solution
+                      <li class="category-list-item" style="border: none">
+                        <i class="fa-solid fa-angles-right"></i>
+                        <a href="#">Digital Solution</a>
                       </li>
                     </ul>
                   </div>
                   <div class="widget-tags">
                     <h4 class="widget-title">Tags</h4>
-                    <div class="tagcloud">
+                    <div class="tag-item">
                       <a href="#">Marketing</a>
                       <a href="#">Development</a>
                       <a href="#">Digital</a>
@@ -353,31 +415,48 @@
                   </div>
                   <div class="widget-comments">
                     <h4 class="widget-title">Comments</h4>
-                    <div>
-                      <i class="fa-solid fa-comment-dots"></i>
-                      <span class="item-cmt-1"
-                        >There are many variations of Lorem available Here</span
-                      >
-                    </div>
-                    <div>
-                      <i class="fa-solid fa-comment-dots"></i>
-                      <span class="item-cmt-1"
-                        >There are many variations of Lorem available Here</span
-                      >
-                    </div>
-                    <div>
-                      <i class="fa-solid fa-comment-dots"></i>
-                      <span class="item-cmt-1"
-                        >Watson Doe on Template: variations of Lorem available,
-                        but</span
-                      >
-                    </div>
-                    <div>
-                      <i class="fa-solid fa-comment-dots"></i>
-                      <span class="item-cmt-1"
-                        >There are many variations of Lorem available Here</span
-                      >
-                    </div>
+                    <ul class="widget-cmt-list">
+                      <li class="widget-cmt-item">
+                        <div class="cmt-icon">
+                          <i class="fa-regular fa-comment-dots"></i>
+                        </div>
+                        <span class="cmt-chat">
+                          <a href="#">
+                            There are many variations of Lorem available Here
+                          </a>
+                        </span>
+                      </li>
+                      <li class="widget-cmt-item">
+                        <div class="cmt-icon">
+                          <i class="fa-regular fa-comment-dots"></i>
+                        </div>
+                        <span class="cmt-chat">
+                          <a href="#">
+                            There are many variations of Lorem available Here
+                          </a>
+                        </span>
+                      </li>
+                      <li class="widget-cmt-item">
+                        <div class="cmt-icon">
+                          <i class="fa-regular fa-comment-dots"></i>
+                        </div>
+                        <span class="cmt-chat">
+                          <a href="#">
+                            There are many variations of Lorem available Here
+                          </a>
+                        </span>
+                      </li>
+                      <li class="widget-cmt-item">
+                        <div class="cmt-icon">
+                          <i class="fa-regular fa-comment-dots"></i>
+                        </div>
+                        <span class="cmt-chat">
+                          <a href="#">
+                            There are many variations of Lorem available Here
+                          </a>
+                        </span>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
