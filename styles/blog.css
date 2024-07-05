@@ -1,0 +1,131 @@
+.flat-section {
+    /* height: 1000px; */
+    height: auto;
+    /* padding: 130px; */
+    padding-bottom: 150px;
+}
+.archive-top {
+    cursor: pointer;
+    /* position: relative; */
+    width: auto;
+    /* z-index: -1; */
+}
+.archive-top > img {
+    border-radius: 40px;
+}
+.container {
+    padding: 0px -12px;
+}
+.homeya-box {
+    width: 370px;
+    /* padding-top: 30px; */
+    padding-bottom: 30px;
+}
+.archive-bottom {
+    cursor: pointer;
+    position: relative;
+    width: 370px;
+    height: auto;
+    /* top: 959px; */
+    margin-top: -100px;
+    background-color: white;
+    border-radius: 40px;
+    border: 1px solid #d9d9d9;
+    /* opacity: 0px; */
+
+    padding: 0px 30px;
+}
+
+.date {
+    display: flex;
+    /* width: 75px;
+    height: 70px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #5f2dde;
+    border-radius: 20px; */
+}
+.date-time {
+    margin-top: -32px;
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    width: 75px;
+    height: 70px;
+    background-color: #5f2dde;
+    border-radius: 20px;
+}
+.date-time > span {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    border: none;
+    /* justify-content: center; */
+    padding: 15px;
+}
+.comment {
+    display: flex;
+    flex-direction: column;
+    /* text-align: flex-end; */
+    justify-content: flex-end;
+}
+.comment span {
+    padding-left: 15px;
+    width: 150px;
+    font-family: Plus Jakarta Sans;
+    color: #6c6a72;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+}
+.comment > span > i {
+    color: #5f2dde;
+    padding-right: 7px;
+}
+.blog-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #6c6a72;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+}
+.read-more {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    /* text-align: center; */
+}
+/* --Hover */
+.homeya-box:hover .archive-top > img {
+    filter: brightness(60%);
+    transition: filter 1s ease;
+}
+.homeya-box:hover .archive-bottom {
+    border: none;
+    color: white;
+    background-color: #5f2dde;
+    transition: background-color 1s ease;
+}
+.homeya-box:hover .date-time > span {
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+    transition:
+        color,
+        background-color 1s ease;
+}
+.homeya-box:hover .comment > span,
+.homeya-box:hover .comment > span > i {
+    color: white;
+    transition: color 1s ease;
+}

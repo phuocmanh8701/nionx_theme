@@ -1,0 +1,144 @@
+.footer {
+    background-color: #1d1729;
+    background-image: url(/images/background-footer.png);
+    width: auto;
+    height: 600px;
+
+    gap: 0px;
+    opacity: 0.02px;
+}
+.content-footer-top {
+    border-bottom: 1px solid #342e3e;
+    padding: 70px 0 43px 0;
+}
+.wd-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.list-social > li > a > i {
+    color: #ffffff;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-social > li {
+    background-color: #2f2a39;
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+    /* align-items: center; */
+    border-radius: 14px;
+}
+.inner-footer {
+    padding-top: 80px;
+    padding-bottom: 125px;
+}
+
+.fw-7 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29.41px;
+    text-align: left;
+    /* margin-bottom: 30px; */
+}
+.navigation-menu-footer {
+    padding-top: 30px;
+}
+.navigation-menu-footer > li {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29.41px;
+    text-align: left;
+}
+.navigation-menu-footer > li > p {
+    color: #a49eb5;
+}
+.navigation-menu-footer > li > a {
+    color: #a49eb5;
+    position: relative;
+}
+#subscribe-form {
+    padding-top: 30px;
+}
+.sub-content > input {
+    width: 370px;
+    height: 60px;
+    background-color: #000;
+    /* padding: 0px 245px 0px 30px; */
+    /* gap: 0px; */
+    border-radius: 20px;
+    /* opacity: 0px; */
+}
+.button-subcribe {
+    position: relative;
+    display: inline-block;
+    margin-top: 12px;
+    width: 157px;
+    height: 56px;
+    border-radius: 20px;
+    color: white !important;
+    background-color: #5f2dde;
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+.bottom-footer {
+    background-color: #110e16;
+    max-width: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content-footer-bottom > span {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 600;
+    color: #a49eb5;
+}
+/* ------CSS Hover---------- */
+.list-social > li:hover {
+    background-color: white;
+    transition: background-color 1s ease;
+}
+.navigation-menu-footer > li > a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    background-color: #ffffff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.navigation-menu-footer > li > a:hover {
+    color: white;
+    transition: color 1s ease;
+}
+.navigation-menu-footer > li > a:hover::after {
+    visibility: visible;
+    width: 100%;
+}
+
+.button-subcribe::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    /* color: white; */
+    background-color: #000000;
+    transition: left 0.3s ease;
+}
+.button-subcribe:hover::after {
+    left: 0;
+}
+.button-subcribe:hover {
+    color: white !important;
+    /* background-color: black; */
+}

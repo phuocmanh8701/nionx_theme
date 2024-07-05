@@ -1,0 +1,202 @@
+.entry {
+    /* width: 100%; */
+    padding-bottom: 120px;
+}
+.entry-image {
+    display: flex;
+    /* position: relative; */
+}
+.entry-image > img {
+    /* position: relative; */
+    /* z-index: -1; */
+}
+.date-time-year {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    /* font-family: Instrument Sans; */
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39.04px;
+    text-align: left;
+    justify-content: center;
+    width: 107px;
+    height: 88px;
+    background-color: #5f2dde;
+    border-radius: 40px 0px 40px 0px;
+}
+.date-time-year2 {
+    /* font-family: Instrument Sans; */
+    display: flex;
+    position: absolute;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+}
+.main-post {
+    margin-top: 30px;
+}
+.entry-meta {
+    padding-bottom: 20px;
+}
+.entry-meta > span {
+    padding-right: 15px;
+}
+.entry-meta > span > i {
+    padding-right: 3px;
+    color: #5f2dde;
+}
+.entry-content {
+    width: 100%;
+}
+.entry-title {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-align: left;
+}
+.entry-description {
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    /* padding-bottom: 40px; */
+}
+.description-1 {
+    padding-bottom: 40px;
+}
+.entry-post-in {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+.entry-post-in > div > span {
+    /* font-family: Instrument Sans; */
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+.post-in {
+    display: flex;
+    align-items: center;
+}
+.post-in > ul {
+    display: flex;
+    justify-content: space-between;
+}
+.post-in > ul > li {
+    background-color: #5f2dde;
+    border-radius: 16px;
+    padding: 14px 0px;
+    margin: 0px 10px;
+}
+.post-in > ul > li > a {
+    padding: 0px 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.52px;
+    text-align: left;
+}
+.tags-2 {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    color: #6c6a72;
+}
+
+.comment-list-wrap {
+    /* width: 100%; */
+}
+.comment-title {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    /* text-align: left; */
+    padding-bottom: 40px;
+}
+.comment {
+    display: inline-flex;
+    /* width: auto; */
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.comment-detail {
+    margin-left: 30px;
+    /* width: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.comment-author {
+    /* font-family: Instrument Sans; */
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+}
+.comment-body {
+    /* font-family: Plus Jakarta Sans; */
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: #6c6a72;
+}
+.comment-reply {
+    /* width: auto; */
+    width: 87px;
+    height: 40px;
+    background-color: #f4f2f9;
+    /* border: 1px none #f4f2f9; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comment-reply > a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #6c6a72;
+}
+/* --Respond Comment-- */
+.form-group {
+    display: flex;
+}
+
+/* ---Sidebar area */
+
+.widet-search {
+    display: flex;
+    /* width: 100%; */
+    height: 120px;
+    background-color: #f4f2f9;
+    justify-content: space-between;
+    /* height: 100%; */
+}
+#search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+#search-form > i {
+    padding-left: 20px;
+    /* height: 50px;
+    width: 50px; */
+
+}

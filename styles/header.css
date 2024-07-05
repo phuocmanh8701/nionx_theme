@@ -1,0 +1,218 @@
+@import url(/styles/reset.css);
+
+/* Header */
+.boxed {
+    max-width: 100%;
+    max-height: auto;
+}
+.header-inner {
+    position: relative;
+    max-width: auto;
+}
+.header-infor {
+    padding-left: 50px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f2f9;
+    color: #6c6a72;
+}
+.icon-contact {
+    padding: 0px 50px;
+    background-color: #ffffff;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.icon-contact > a > i {
+    padding: 13px 12px;
+    color: black;
+}
+.fa-brands:hover {
+    color: #5f2dde;
+}
+.fa-location-dot,
+.fa-envelope,
+.fa-clock {
+    padding-right: 2px;
+    color: #5f2dde;
+}
+
+.logo {
+    padding-left: 50px;
+}
+.header-bottom {
+    /* padding-top: 30px; */
+    display: flex;
+    justify-content: space-between;
+}
+.logo,
+.nav-wrap {
+    padding-top: 30px;
+}
+#mainnav > ul > li {
+    letter-spacing: 0.001em;
+    text-align: left;
+    display: inline-block;
+    padding: 15px 15px 0 15px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+#mainnav > ul > li > a {
+    color: #6c6a72;
+}
+#mainnav > ul > li > a:hover {
+    color: #1d1729;
+}
+/* .header-contact > button {
+    width: 113px;
+    height: 40px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    gap:10px;
+    opacity: 0px;
+    background: #F4F2F9;
+} */
+.contact {
+    padding: 0px 20px;
+}
+.contact > a {
+    width: 113px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 10px;
+    gap: 10px;
+    opacity: 0px;
+    padding: 9px;
+    margin-top: 33px;
+    background: #f4f2f9;
+    color: #1d1729;
+    text-align: center;
+    display: inline-block;
+    font-weight: 600;
+}
+.header-contact {
+    display: flex;
+}
+.call-number {
+    /* position: relative; */
+    width: 419px;
+    height: 100px;
+    left: 1501px;
+    gap: 0px;
+    opacity: 0px;
+    background: #5f2dde;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.fa-phone-volume {
+    color: #5f2dde;
+}
+.call {
+    width: 40px;
+    height: 40px;
+    margin: 30px 0px 0px 50px;
+    padding: 10px 9px 9px 12px;
+    gap: 0px;
+    background-color: #ffffff;
+    border-radius: 42px;
+    opacity: 0px;
+}
+.call-number > span {
+    /* position: absolute; */
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: left;
+    color: #ffffff;
+    padding: 25px;
+}
+.call-number > span > span {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+}
+.search {
+    padding: 42px;
+}
+.search > i {
+    width: 20px;
+    height: 20px;
+    gap: 0px;
+    opacity: 0px;
+    color: #ffffff;
+    padding-right: 30px;
+}
+.page-title {
+    /* padding-bottom: 120px; */
+    max-width: auto;
+    height: 398px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* padding: 20px; */
+    margin-bottom: 120px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/BlogDetails.png);
+}
+.page-title-heading > h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: -0.03em;
+    color: white;
+}
+
+.beadcrumbs {
+    gap: 10px;
+    border-radius: 12px;
+    border: 1px;
+    border-color: white;
+    border: 2px solid white;
+    letter-spacing: 0.001em;
+
+    display: inline-block;
+}
+.beadcrumbs > ul {
+    padding: 15px 30px;
+}
+
+.beadcrumbs > ul > li {
+    letter-spacing: 0.001em;
+    text-align: left;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.beadcrumbs > ul > li > a {
+    color: white;
+}
+.banner {
+    /* position: absolute; */
+    padding-top: 150px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -130%); */
+}
+/* --Hover-- */
+
+.call:hover {
+    background-color: black;
+    transition: background-color 1s ease;
+}
+.search > i:hover {
+    color: black;
+    transition: color 0.3s ease;
+}
+.call > i:hover {
+    color: white;
+    transition: color 1s ease;
+}
