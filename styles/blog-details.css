@@ -243,6 +243,10 @@
 .lastest-item {
     display: flex;
     margin: 20px 0px;
+    position: relative;
+}
+.lastest-item-image > img {
+    transition: filter 0.4s ease-in-out;
 }
 .lastest-item-content {
     display: flex;
@@ -259,12 +263,14 @@
 }
 .lastest-item-title {
     /* font-family: Instrument Sans; */
+    position: relative;
     font-size: 16px;
     font-weight: 700;
     line-height: 19.52px;
-    text-align: left;
-    width: 196px;
+    /* text-align: left; */
+    /* width: 196px; */
     height: auto;
+    /* box-sizing: border-box;   */
 }
 .category-list-item > a {
     /* font-family: Instrument Sans; */
@@ -281,12 +287,13 @@
 .category-list-item {
     padding: 16px 0px;
     border-bottom: 1px solid #ebe6de;
+    transition: padding 0.4s ease-in-out;
 }
 .tag-item {
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content:flex end ; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 .tag-item > a {
     /* font-family: Instrument Sans; */
@@ -295,6 +302,7 @@
     color: #6c6a72;
     width: auto;
     height: 40px;
+    /* margin: 15px; */
     padding: 8px 16px 10px 16px;
     border-radius: 10px;
     background-color: #f4f2f9;
@@ -304,6 +312,7 @@
     display: flex;
     padding-bottom: 30px;
     /* justify-content: flex-start; */
+    transition: color 1s ease-in-out;
 }
 .cmt-icon {
     display: flex;
@@ -314,9 +323,11 @@
     margin-right: 10px;
     background-color: #f4f2f9;
     border-radius: 39px;
+    transition: background-color 0.4s ease-in-out;
 }
 .cmt-icon > i {
     color: #6c6a72;
+    transition: backgroucolor 0.4s ease-in-out;
 }
 .cmt-chat {
     width: 285px;
@@ -330,12 +341,12 @@
 
 .post-in > ul > li:hover {
     background-color: black;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease-in-out;
 }
 .comment-reply:hover {
     /* color: white; */
     background-color: #5f2dde;
-    transition: background-color 1s ease;
+    transition: background-color 1s ease-in-out;
 }
 .comment-reply:hover a {
     color: white;
@@ -343,18 +354,45 @@
 /* Widget Cmt Hover */
 .widget-cmt-item:hover .cmt-icon {
     background-color: #5f2dde;
-    transition: background-color 1s ease;
 }
 .widget-cmt-item:hover .cmt-icon > i {
     color: white;
-    transition: color 1s ease;
 }
 .category-list-item:hover {
     padding-left: 15px;
-    transition: padding 0.8s ease;
+}
+/* --Hover Lastest Post */
+.widget-lastest-list > li:hover .lastest-item-image > img {
+    filter: brightness(0.5);
+}
+.lastest-item-title:hover {
+    /* color: rgb(0, 0, 0); */
+    transition: color 1s ease;
+}
+.lastest-item-title::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    background-color: #000000;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.lastest-item-title:hover::after {
+    visibility: visible;
+    width: 100%;
 }
 /* --Hover Button */
 #submit:hover {
     background-color: black;
-    transition: background-color 1s ease;
+    transition: background-color 0.8s ease-in-out;
+}
+/* ---Hover Tag Wrap */
+.tag-item > a:hover {
+    background-color: #5f2dde;
+    color: white;
+    transition: color 0.8s ease-in-out;
+    transition: background-color 1s ease-in-out;
 }
