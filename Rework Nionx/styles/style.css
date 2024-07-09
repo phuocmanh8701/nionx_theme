@@ -4,19 +4,100 @@
   * Author: Tran Thanh Phuoc Manh
   * Author URI: fb.com/phuocmanhit.dev
 */
-.header {
-    max-width: 100%;
+.col-md-6 {
+    padding: 0;
+}
+.header,
+.page-wrap {
+    width: 100%;
 }
 .topbar-left-infor,
 .topbar-right,
-.topbar-social {
+.topbar-social,
+.header-nav-list,
+.header-right,
+.header-right-infor {
     display: flex;
-    /* float: left; */
 }
-.topbar-right {
-    float: right;
+/* Color */
+.header-nav-item > a,
+.header-right-contact > a {
+    color: #1d1729;
 }
-.topbar-left-infor > li,
-.topbar-right {
+/* ---- */
+.topbar-left {
+    padding-left: 50px;
+    background-color: #f4f2f9;
+}
+.topbar-left-infor > li {
     padding-right: 30px;
+}
+.topbar-left-infor > li > i,
+.topbar-text > i {
+    color: #5f2dde;
+    padding-right: 5px;
+}
+.topbar-right {
+    justify-content: flex-end;
+}
+.topbar-text {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border-top-right-radius: 20px; */
+    background-color: #f4f2f9;
+    border-top-right-radius: 20px;
+    padding-right: 50px;
+}
+.topbar-social {
+    padding: 0 30px 0 50px;
+    background-color: white;
+}
+.topbar-social > li > a > i {
+    color: black;
+    padding-right: 20px;
+}
+.main-header-inner {
+    display: flex;
+    /* flex-direction: column; */
+    padding-left: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-item {
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #1d1729;
+}
+/* Header right */
+.header-right-contact {
+    width: 120px;
+    height: 40px;
+    background-color: #f4f2f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.header-right-infor {
+    background-color: #5f2dde;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-right-contact {
+    margin: 50px;
+}
+.header-right-contact > a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
 }
