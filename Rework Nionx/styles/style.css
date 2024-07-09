@@ -1,0 +1,22 @@
+/**
+  * Name: Medicare
+  * Version: 1.0
+  * Author: Tran Thanh Phuoc Manh
+  * Author URI: fb.com/phuocmanhit.dev
+*/
+.header {
+    max-width: 100%;
+}
+.topbar-left-infor,
+.topbar-right,
+.topbar-social {
+    display: flex;
+    /* float: left; */
+}
+.topbar-right {
+    float: right;
+}
+.topbar-left-infor > li,
+.topbar-right {
+    padding-right: 30px;
+}
