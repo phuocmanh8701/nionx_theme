@@ -1,0 +1,14 @@
+.product {
+    display: flexbox;
+    height: 150px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 20px;
+    text-align: center;
+}
+.cart {
+    height: 150px;
+    width: 300px;
+    margin-top: 50px;
+    display: none;
+}
