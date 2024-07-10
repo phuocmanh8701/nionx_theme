@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #f4f2f9;
-    color: #6c6a72;
+    /* color: #6c6a72; */
 }
 .icon-contact {
     padding: 0px 50px;
@@ -150,14 +150,14 @@
 }
 .page-title {
     /* padding-bottom: 120px; */
-    max-width: auto;
+    /* max-width: auto; */
     height: 398px;
     display: flex;
     justify-content: space-between;
     text-align: center;
     /* padding: 20px; */
     margin-bottom: 120px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/BlogDetails.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/blogdetail.png);
 }
 .page-title-heading > h1 {
     font-size: 50px;

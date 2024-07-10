@@ -1,0 +1,158 @@
+/**
+  * Name: Medicare
+  * Version: 1.0
+  * Author: Tran Thanh Phuoc Manh
+  * Author URI: fb.com/phuocmanhit.dev
+**/
+/* CL */
+:root {
+    --primary-color: #5f2dde;
+    --secondary-color: #f4f2f9;
+    --tertiary-color: #6c6a72;
+}
+.topbar-infor > li > i,
+.topbar-right > p > i,
+.icon-call > i {
+    color: var(--primary-color);
+}
+
+.topbar-infor > li > span,
+.header-nav-list > li > a,
+.header-right-contact > a {
+    color: var(--tertiary-color);
+}
+.header-right-infor {
+    background-color: var(--primary-color);
+}
+.header-right-contact {
+    background-color: var(--secondary-color);
+}
+/* --Topbar-- */
+.topbar-inner {
+    display: flex;
+    background-color: var(--secondary-color);
+}
+.topbar-infor {
+    display: flex;
+}
+.topbar-infor > li {
+    padding-right: 30px;
+}
+
+.topbar-right {
+    margin-left: auto;
+    display: flex;
+}
+.topbar-right > p {
+    padding-right: 50px;
+}
+.topbar-social {
+    display: flex;
+    background-color: white;
+    padding-left: 50px;
+}
+.topbar-social > li > a > i {
+    padding-right: 30px;
+    color: black;
+}
+/* -- Header -- */
+.main-header-inner,
+.header-nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav > ul > li {
+    padding-right: 38px;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+}
+.header-right-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 80px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+}
+.header-right-infor {
+    display: flex;
+    align-items: center;
+    padding: 28px 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.icon-call {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 42px;
+    background-color: white;
+}
+.header-right-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px 0px 18px;
+    border-right: 1px solid var(--tertiary-color);
+}
+.header-right-content > span {
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 23px;
+}
+.header-number-call {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.header-infor-item > a {
+    color: white;
+    padding-left: 20px;
+}
+/* --Page------------ */
+.page-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/blogdetail.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin: 0 15px; */
+    /* height: 398px; */
+}
+.page-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 398px;
+}
+.page-header-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nionx-breadcrumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    height: 48px;
+    border-radius: 12px;
+    border: 1px solid #ffffff;
+}
+.nionx-breadcrumb > li,
+.nionx-breadcrumb > li > a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 47px;
+}
+.nionx-breadcrumb > li > span::before {
+    content: "/";
+    padding: 0px 2px;
+}
