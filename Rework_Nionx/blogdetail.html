@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="fonts/fontawesome-free-6.5.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/blogdetail.css" />
+    <title>Nionx</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="topbar">
+        <div class="container-fluid">
+          <div class="topbar-inner">
+            <ul class="topbar-infor">
+              <li class="topbar-infor-address">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>30 Commercial Road Fratton, Australia</span>
+              </li>
+              <li class="topbar-email">
+                <i class="fa-solid fa-envelope"></i>
+                <span>needhelp@company.com</span>
+              </li>
+            </ul>
+            <div class="topbar-right">
+              <p class="topbar-right-clock">
+                <i class="fa-solid fa-clock"></i>
+                <span>Mon to Sat: 8.00 am - 7.00 pm</span>
+              </p>
+              <ul class="topbar-social">
+                <li class="facebook">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li class="twitter">
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="pinterest">
+                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </li>
+                <li class="instagram">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header PC -->
+      <header class="main-header" id="header">
+        <div class="container-fluid">
+          <div class="header-inner">
+            <div class="logo">
+              <a href="#">
+                <img src="imgs/logo.png" alt="Logo" />
+              </a>
+            </div>
+            <nav class="header-nav main-menu">
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="header-nav-item"><a href="#">About</a></li>
+                <li class="header-nav-item">
+                  <a href="#">Service</a>
+                  <ul class="header-sub-nav">
+                    <li class="sub-nav-item"><a href="#">Service</a></li>
+                    <li class="sub-nav-item"><a href="#">Service</a></li>
+                    <li class="sub-nav-item"><a href="#">Service</a></li>
+                  </ul>
+                </li>
+                <li class="header-nav-item"><a href="#">Pages</a></li>
+                <li class="header-nav-item"><a href="#">Shop</a></li>
+                <li class="header-nav-item"><a href="#">Blog</a></li>
+                <li class="header-nav-item"><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="header-right">
+              <div class="header-right-contact">
+                <a href="#">Contact Us</a>
+              </div>
+              <div class="header-right-infor">
+                <div class="icon-call">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="header-right-content">
+                  <span>Call Anytime</span>
+                  <p class="header-number-call">(303) 555-0105</p>
+                </div>
+                <div class="header-infor-item">
+                  <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+                </div>
+                <div class="header-mobile">
+                  <i class="fa-solid fa-bars fa-2xl"></i>
+                </div>
+              </div>
+            </div>
+            <label for="nav-mobile-check" class="header-mobile-2">
+              <i class="fa-solid fa-bars fa-2xl"></i>
+            </label>
+            <div class="overlay"></div>
+            <!-- Header Mobile -->
+            <nav class="nav-mobile">
+              <ul class="nav-list-mobile">
+                <li class="nav-item-moblie"><a href="#">Home</a></li>
+                <li class="nav-item-moblie"><a href="#">Service</a></li>
+                <li class="nav-item-moblie"><a href="#">About</a></li>
+                <li class="nav-item-moblie"><a href="#">Pages</a></li>
+                <li class="nav-item-moblie"><a href="#">Shop</a></li>
+                <li class="nav-item-moblie"><a href="#">Blog</a></li>
+                <li class="nav-item-moblie"><a href="#">Contact</a></li>
+              </ul>
+              <label for="nav-mobile-check" class="nav-mobile-close">
+                <i class="fa-solid fa-x fa-xl" style="color: #fff"></i>
+              </label>
+              <input type="checkbox" id="nav-mobile-check" />
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <section class="page-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="page-bg">
+                <h2 class="page-header-title text-white">Blog</h2>
+                <ul class="nionx-breadcrumb">
+                  <li><a href="#">Home</a></li>
+                  <li><span>Blog</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-content blog-posts">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="post-wrap">
+                <article class="entry">
+                  <div class="feature-post">
+                    <div class="entry-image">
+                      <img src="imgs/img-main.png" alt="" />
+                      <div class="date">
+                        <span class="date-day">31 </span
+                        ><span class="date-month-year">July 2023</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="main-post">
+                    <div class="entry-meta">
+                      <span
+                        ><i class="fa-solid fa-circle-user"></i>By Admin</span
+                      >
+                      <span
+                        ><i class="fa-solid fa-comments"></i> 2 Comment</span
+                      >
+                    </div>
+                    <div class="entry-content">
+                      <h2 class="entry-title title">
+                        We Help You Drive Properly on the Road
+                      </h2>
+                      <p class="entry-description description-1">
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteradution
+                        in some form by injected humour, or randomised words
+                        which don't look even slightly believable. If you are
+                        going There are many variations of passages of Lorem
+                        Ipsum available, but the majority have suffered
+                        alteradution in some form by injected humour, or
+                        randomised words which don't look even slightly
+                        believable. If you are going
+                      </p>
+                      <p class="entry-description description-2">
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteradution
+                        in some form by injected humour, or randomised words
+                        which don't look even slightly believable. If you are
+                        going
+                      </p>
+                    </div>
+                    <div class="entry-post-in">
+                      <div class="post-in">
+                        <span>Post In:</span>
+                        <ul>
+                          <li><a href="#">Search</a></li>
+                          <li><a href="#">Seo</a></li>
+                        </ul>
+                      </div>
+                      <div class="tags">
+                        <span
+                          >Tags:
+                          <span class="tags-2">Safty, Learning</span></span
+                        >
+                      </div>
+                    </div>
+                    <div class="comment-post">
+                      <div class="comment-list-wrap">
+                        <div class="comment-title">
+                          <span>2 Comments</span>
+                        </div>
+                        <ul class="comment-list">
+                          <li>
+                            <article class="comment">
+                              <img
+                                src="imgs/blog-comment.png"
+                                alt="Avatar"
+                                width="168"
+                                height="168"
+                              />
+                              <div class="comment-detail">
+                                <span class="comment-author">David Shon</span>
+                                <p class="comment-body">
+                                  Nam vel lacus eu nisl bibendum accumsan vitae
+                                  vitae nibh. Nam nec eros id magna hendrerit
+                                  sagittis. Nullam sed mi non odio feugiat
+                                  volutpat sit amet nec elit.
+                                </p>
+                                <span class="comment-reply"
+                                  ><a href="#">Reply</a></span
+                                >
+                              </div>
+                            </article>
+                          </li>
+                          <li>
+                            <article class="comment">
+                              <img
+                                src="imgs/blog-comment-2.png"
+                                alt="Avatar"
+                                width="168"
+                                height="168"
+                              />
+                              <div class="comment-detail">
+                                <span class="comment-author"
+                                  >Jhon Watchson</span
+                                >
+                                <p class="comment-body">
+                                  Nam vel lacus eu nisl bibendum accumsan vitae
+                                  vitae nibh. Nam nec eros id magna hendrerit
+                                  sagittis. Nullam sed mi non odio feugiat
+                                  volutpat sit amet nec elit.
+                                </p>
+                                <span class="comment-reply"
+                                  ><a href="#">Reply</a>
+                                </span>
+                              </div>
+                            </article>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="comment-form">
+                        <h4 class="comment-reply-title" id="reply-title">
+                          Leave a Comment
+                        </h4>
+                        <form action="" class="comment-form_form">
+                          <div class="form-group">
+                            <div class="form-control form-name">
+                              <input
+                                type="text"
+                                name="name"
+                                placeholder="Your Name*"
+                                required=""
+                              />
+                            </div>
+                            <div class="form-control form-email">
+                              <input
+                                type="text"
+                                name="email"
+                                placeholder="Email Address *"
+                                required=""
+                              />
+                            </div>
+                            <div class="form-control form-control_full">
+                              <textarea
+                                name="message"
+                                placeholder="Write a Message"
+                              ></textarea>
+                            </div>
+                            <div class="form-control">
+                              <input
+                                name="submit"
+                                type="submit"
+                                id="submit"
+                                class="submit-btn"
+                                value="Leave a Comment"
+                              />
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sidebar-area">
+                <div class="primary-sidebar widget-area">
+                  <div class="widet-search">
+                    <form action="#" id="search-form" method="get">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input
+                        style="border: none"
+                        type="text"
+                        placeholder="Type Here .... "
+                      />
+                    </form>
+                  </div>
+                  <div class="widget-lastest-posts">
+                    <h4 class="widget-title">Lastest Post</h4>
+                    <ul class="widget-lastest-list">
+                      <li>
+                        <div class="lastest-item">
+                          <div class="lastest-item-image">
+                            <img
+                              src="imgs/lastest-item-1.png"
+                              alt=""
+                              style="border-radius: 6px"
+                            />
+                          </div>
+                          <div class="lastest-item-content">
+                            <p class="lastest-item-meta">
+                              <a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                26 Mar, 2023
+                              </a>
+                            </p>
+                            <p class="lastest-item-title">
+                              The Complete Web Developer Guideline
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="lastest-item">
+                          <div class="lastest-item-image">
+                            <img
+                              src="imgs/lastest-item-1.png"
+                              alt=""
+                              style="border-radius: 6px"
+                            />
+                          </div>
+                          <div class="lastest-item-content">
+                            <p class="lastest-item-meta">
+                              <a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                26 Mar, 2023
+                              </a>
+                            </p>
+                            <p class="lastest-item-title">
+                              The Complete Web Developer Guideline
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="lastest-item">
+                          <div class="lastest-item-image">
+                            <img
+                              src="imgs/lastest-item-1.png"
+                              alt=""
+                              style="border-radius: 6px"
+                            />
+                          </div>
+                          <div class="lastest-item-content">
+                            <p class="lastest-item-meta">
+                              <a href="#">
+                                <i class="fa-regular fa-clock"></i>
+                                26 Mar, 2023
+                              </a>
+                            </p>
+                            <p class="lastest-item-title">
+                              The Complete Web Developer Guideline
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="widget-category">
+                    <h4 class="widget-title">Category</h4>
+                    <ul class="widget-category-list">
+                      <li class="category-list-item">
+                        <i class="fa-solid fa-angles-right"></i>
+                        <a href="#">Web Development</a>
+                      </li>
+                      <li class="category-list-item">
+                        <i class="fa-solid fa-angles-right"></i>
+                        <a href="#">Social Marketing</a>
+                      </li>
+                      <li class="category-list-item">
+                        <i class="fa-solid fa-angles-right"></i>
+                        <a href="#">Technology</a>
+                      </li>
+                      <li class="category-list-item">
+                        <i class="fa-solid fa-angles-right"></i>
+                        <a href="#">Business & Finance</a>
+                      </li>
+                      <li class="category-list-item" style="border: none">
+                        <i class="fa-solid fa-angles-right"></i>
+                        <a href="#">Digital Solution</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="widget-tags">
+                    <h4 class="widget-title">Tags</h4>
+                    <div class="tag-item">
+                      <a href="#">Marketing</a>
+                      <a href="#">Development</a>
+                      <a href="#">Digital</a>
+                      <a href="#">Design</a>
+                    </div>
+                  </div>
+                  <div class="widget-comments">
+                    <h4 class="widget-title">Comments</h4>
+                    <ul class="widget-cmt-list">
+                      <li class="widget-cmt-item">
+                        <div class="cmt-icon">
+                          <i class="fa-regular fa-comment-dots"></i>
+                        </div>
+                        <span class="cmt-chat">
+                          <a href="#">
+                            There are many variations of Lorem available Here
+                          </a>
+                        </span>
+                      </li>
+                      <li class="widget-cmt-item">
+                        <div class="cmt-icon">
+                          <i class="fa-regular fa-comment-dots"></i>
+                        </div>
+                        <span class="cmt-chat">
+                          <a href="#">
+                            There are many variations of Lorem available Here
+                          </a>
+                        </span>
+                      </li>
+                      <li class="widget-cmt-item">
+                        <div class="cmt-icon">
+                          <i class="fa-regular fa-comment-dots"></i>
+                        </div>
+                        <span class="cmt-chat">
+                          <a href="#">
+                            There are many variations of Lorem available Here
+                          </a>
+                        </span>
+                      </li>
+                      <li class="widget-cmt-item">
+                        <div class="cmt-icon">
+                          <i class="fa-regular fa-comment-dots"></i>
+                        </div>
+                        <span class="cmt-chat">
+                          <a href="#">
+                            There are many variations of Lorem available Here
+                          </a>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="footer">
+        <div class="top-footer">
+          <div class="container">
+            <div class="row">
+              <div class="content-footer-top">
+                <div class="col-md-2 footer-logo">
+                  <a href="#" class="footer-logo">
+                    <img
+                      src="/Rework_Nionx/imgs/ft-logo.png"
+                      alt="logo-footer"
+                    />
+                  </a>
+                </div>
+                <div class="col-md-3 offset-md-7 wd-social">
+                  <div class="wd-social">
+                    <ul class="list-social d-flex align-items-center">
+                      <li>
+                        <a href="#" class="box-icon w-40 social"
+                          ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="box-icon w-40 social"
+                          ><i class="fa-brands fa-linkedin-in"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="box-icon w-40 social"
+                          ><i class="fa-brands fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="box-icon w-40 social"
+                          ><i class="fa-brands fa-youtube"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-lg-2 col-6">
+                <div class="footer-cl">
+                  <h4 class="fw-7 text-white">Company</h4>
+                  <ul class="navigation-menu-footer">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Meet the team</a></li>
+                    <li><a href="#">Contact Now</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-2 col-6">
+                <div class="footer-cl">
+                  <h4 class="fw-7 text-white">Links</h4>
+                  <ul class="navigation-menu-footer">
+                    <li><a href="#">Social Marketing</a></li>
+                    <li><a href="#">Paid Search Engine</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-4 col-6">
+                <div class="footer-cl">
+                  <h4 class="fw-7 text-white">Contact</h4>
+                  <ul class="navigation-menu-footer">
+                    <li>
+                      <p class="text-address">
+                        6391 Elgin St. Celina, Delaware New York. USA
+                      </p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-phone-volume"></i>
+                      <a href="tel:(303) 555-0105" class="">(303) 555-0105</a>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-envelope"></i>
+                      <a class="textt">michael.mitc@example.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-4">
+                <div class="footer-col">
+                  <h4 class="fw-7 text-white">Newsletter</h4>
+                  <form action="#" class="" id="subscribe-form">
+                    <div class="sub-content">
+                      <input
+                        type="email"
+                        name="email-form"
+                        class=""
+                        placeholder="Email address..."
+                      />
+                      <button type="button" class="button-subcribe">
+                        Subscribe
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-footer">
+          <div class="container">
+            <div class="content-footer-bottom">
+              <span>© Copyright 2023 by Company.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

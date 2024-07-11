@@ -15,12 +15,12 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
     <link
       rel="stylesheet"
       href="fonts/fontawesome-free-6.5.2-web/css/all.min.css"
     />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Nionx</title>
   </head>
   <body>
@@ -65,66 +65,72 @@
       <header class="main-header" id="header">
         <div class="container-fluid">
           <div class="header-inner">
-            <div class="main-header-inner">
-              <div class="logo">
-                <a href="#">
-                  <img src="imgs/logo.png" alt="Logo" />
-                </a>
-              </div>
-              <nav class="header-nav main-menu">
-                <ul class="header-nav-list">
-                  <li class="header-nav-item">
-                    <a href="#">Home</a>
-                  </li>
-                  <li class="header-nav-item"><a href="#">About</a></li>
-                  <li class="header-nav-item"><a href="#">Service</a></li>
-                  <li class="header-nav-item"><a href="#">Pages</a></li>
-                  <li class="header-nav-item"><a href="#">Shop</a></li>
-                  <li class="header-nav-item"><a href="#">Blog</a></li>
-                  <li class="header-nav-item"><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-              <div class="header-right">
-                <div class="header-right-contact">
-                  <a href="#">Contact Us</a>
-                </div>
-                <div class="header-right-infor">
-                  <div class="icon-call">
-                    <i class="fa-solid fa-phone-volume"></i>
-                  </div>
-                  <div class="header-right-content">
-                    <span>Call Anytime</span>
-                    <p class="header-number-call">(303) 555-0105</p>
-                  </div>
-                  <div class="header-infor-item">
-                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="#"><i class="fa-regular fa-circle-user"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- Header Mobile -->
-              <div class="header-mobile">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                  <path
-                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-                  />
-                </svg>
-              </div>
-              <nav class="nav-mobile">
-                <ul class="nav-list-mobile">
-                  <li class="nav-item-mobile">
-                    <a href="#">Home</a>
-                  </li>
-                  <li class="nav-item-moblie"><a href="#">Service</a></li>
-                  <li class="nav-item-moblie"><a href="#">About</a></li>
-                  <li class="nav-item-moblie"><a href="#">Pages</a></li>
-                  <li class="nav-item-moblie"><a href="#">Shop</a></li>
-                  <li class="nav-item-moblie"><a href="#">Blog</a></li>
-                  <li class="nav-item-moblie"><a href="#">Contact</a></li>
-                </ul>
-              </nav>
+            <div class="logo">
+              <a href="#">
+                <img src="imgs/logo.png" alt="Logo" />
+              </a>
             </div>
+            <nav class="header-nav main-menu">
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="header-nav-item"><a href="#">About</a></li>
+                <li class="header-nav-item">
+                  <a href="#">Service</a>
+                  <ul class="header-sub-nav">
+                    <li class="sub-nav-item"><a href="#">Service</a></li>
+                    <li class="sub-nav-item"><a href="#">Service</a></li>
+                    <li class="sub-nav-item"><a href="#">Service</a></li>
+                  </ul>
+                </li>
+                <li class="header-nav-item"><a href="#">Pages</a></li>
+                <li class="header-nav-item"><a href="#">Shop</a></li>
+                <li class="header-nav-item"><a href="#">Blog</a></li>
+                <li class="header-nav-item"><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="header-right">
+              <div class="header-right-contact">
+                <a href="#">Contact Us</a>
+              </div>
+              <div class="header-right-infor">
+                <div class="icon-call">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="header-right-content">
+                  <span>Call Anytime</span>
+                  <p class="header-number-call">(303) 555-0105</p>
+                </div>
+                <div class="header-infor-item">
+                  <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  <a href="#"><i class="fa-regular fa-circle-user"></i></a>
+                </div>
+                <div class="header-mobile">
+                  <i class="fa-solid fa-bars fa-2xl"></i>
+                </div>
+              </div>
+            </div>
+            <label for="nav-mobile-check" class="header-mobile-2">
+              <i class="fa-solid fa-bars fa-2xl"></i>
+            </label>
+            <div class="overlay"></div>
+            <!-- Header Mobile -->
+            <nav class="nav-mobile">
+              <ul class="nav-list-mobile">
+                <li class="nav-item-moblie"><a href="#">Home</a></li>
+                <li class="nav-item-moblie"><a href="#">Service</a></li>
+                <li class="nav-item-moblie"><a href="#">About</a></li>
+                <li class="nav-item-moblie"><a href="#">Pages</a></li>
+                <li class="nav-item-moblie"><a href="#">Shop</a></li>
+                <li class="nav-item-moblie"><a href="#">Blog</a></li>
+                <li class="nav-item-moblie"><a href="#">Contact</a></li>
+              </ul>
+              <label for="nav-mobile-check" class="nav-mobile-close">
+                <i class="fa-solid fa-x fa-xl" style="color: #fff"></i>
+              </label>
+              <input type="checkbox" id="nav-mobile-check" />
+            </nav>
           </div>
         </div>
       </header>
@@ -351,36 +357,42 @@
       <div class="footer">
         <div class="top-footer">
           <div class="container">
-            <div class="row content-footer-top">
-              <div class="col-md-2 footer-logo">
-                <a href="#" class="footer-logo">
-                  <img src="/Rework_Nionx/imgs/ft-logo.png" alt="logo-footer" />
-                </a>
-              </div>
-              <div class="col-md-7"></div>
-              <div class="col-md-3 wd-social">
-                <ul class="list-social d-flex align-items-center">
-                  <li>
-                    <a href="#" class="box-icon w-40 social"
-                      ><i class="fa-brands fa-facebook-f"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#" class="box-icon w-40 social"
-                      ><i class="fa-brands fa-linkedin-in"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#" class="box-icon w-40 social"
-                      ><i class="fa-brands fa-twitter"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="#" class="box-icon w-40 social"
-                      ><i class="fa-brands fa-youtube"></i
-                    ></a>
-                  </li>
-                </ul>
+            <div class="row">
+              <div class="content-footer-top">
+                <div class="col-md-2 footer-logo">
+                  <a href="#" class="footer-logo">
+                    <img
+                      src="/Rework_Nionx/imgs/ft-logo.png"
+                      alt="logo-footer"
+                    />
+                  </a>
+                </div>
+                <div class="col-md-3 offset-md-7 wd-social">
+                  <div class="wd-social">
+                    <ul class="list-social d-flex align-items-center">
+                      <li>
+                        <a href="#" class="box-icon w-40 social"
+                          ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="box-icon w-40 social"
+                          ><i class="fa-brands fa-linkedin-in"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="box-icon w-40 social"
+                          ><i class="fa-brands fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="#" class="box-icon w-40 social"
+                          ><i class="fa-brands fa-youtube"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -388,8 +400,8 @@
         <div class="inner-footer">
           <div class="container">
             <div class="row">
-              <div class="col-md-2">
-                <div class="footer-cl-1">
+              <div class="col-md-4 col-lg-2 col-6">
+                <div class="footer-cl">
                   <h4 class="fw-7 text-white">Company</h4>
                   <ul class="navigation-menu-footer">
                     <li><a href="#">About Us</a></li>
@@ -399,8 +411,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-2">
-                <div class="footer-cl-2">
+              <div class="col-md-4 col-lg-2 col-6">
+                <div class="footer-cl">
                   <h4 class="fw-7 text-white">Links</h4>
                   <ul class="navigation-menu-footer">
                     <li><a href="#">Social Marketing</a></li>
@@ -410,8 +422,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="footer-cl-3">
+              <div class="col-md-4 col-lg-4 col-6">
+                <div class="footer-cl">
                   <h4 class="fw-7 text-white">Contact</h4>
                   <ul class="navigation-menu-footer">
                     <li>
@@ -430,9 +442,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-1"></div>
-              <div class="col-md-4">
-                <div class="footer-col-4">
+              <div class="col-md-4 col-lg-4">
+                <div class="footer-col">
                   <h4 class="fw-7 text-white">Newsletter</h4>
                   <form action="#" class="" id="subscribe-form">
                     <div class="sub-content">
