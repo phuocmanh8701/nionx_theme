@@ -1,0 +1,28 @@
+.over-lay {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.clickday:checked ~ .over-lay {
+    display: block;
+}
+.clickday:checked ~ .nav-list {
+        transform: translateX(0%);
+
+}
+.nav-list {
+    /* display: none; */
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 1;
+    right: 0;
+    width: 400px;
+    max-width: 100%;
+    background-color: rgb(255, 195, 195);
+    transform: translateX(100%);
+}

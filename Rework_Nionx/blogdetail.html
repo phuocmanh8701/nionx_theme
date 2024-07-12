@@ -20,7 +20,7 @@
       href="fonts/fontawesome-free-6.5.2-web/css/all.min.css"
     />
     <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/blogdetail.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Nionx</title>
   </head>
   <body>
@@ -134,35 +134,36 @@
                   <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                   <a href="#"><i class="fa-regular fa-circle-user"></i></a>
                 </div>
-                <div class="header-mobile">
+                <label for="nav-mobile-check" class="header-mobile">
                   <i class="fa-solid fa-bars fa-2xl"></i>
-                </div>
+                </label>
               </div>
             </div>
             <label for="nav-mobile-check" class="header-mobile-2">
               <i class="fa-solid fa-bars fa-2xl"></i>
             </label>
-            <div class="overlay"></div>
             <!-- Header Mobile -->
-            <nav class="nav-mobile">
-              <ul class="nav-list-mobile">
-                <li class="nav-item-moblie"><a href="#">Home</a></li>
-                <li class="nav-item-moblie"><a href="#">Service</a></li>
-                <li class="nav-item-moblie"><a href="#">About</a></li>
-                <li class="nav-item-moblie"><a href="#">Pages</a></li>
-                <li class="nav-item-moblie"><a href="#">Shop</a></li>
-                <li class="nav-item-moblie"><a href="#">Blog</a></li>
-                <li class="nav-item-moblie"><a href="#">Contact</a></li>
-              </ul>
-              <label for="nav-mobile-check" class="nav-mobile-close">
-                <i class="fa-solid fa-x fa-xl" style="color: #fff"></i>
-              </label>
-              <input type="checkbox" id="nav-mobile-check" />
-            </nav>
           </div>
         </div>
       </header>
-
+      <div class="header-mb">
+        <nav class="nav-mobile">
+          <ul class="nav-list-mobile">
+            <li class="nav-item-moblie"><a href="#">Home</a></li>
+            <li class="nav-item-moblie"><a href="#">Service</a></li>
+            <li class="nav-item-moblie"><a href="#">About</a></li>
+            <li class="nav-item-moblie"><a href="#">Pages</a></li>
+            <li class="nav-item-moblie"><a href="#">Shop</a></li>
+            <li class="nav-item-moblie"><a href="#">Blog</a></li>
+            <li class="nav-item-moblie"><a href="#">Contact</a></li>
+          </ul>
+          <label for="nav-mobile-check" class="nav-mobile-close">
+            <i class="fa-solid fa-x fa-xl" style="color: #fff"></i>
+          </label>
+        </nav>
+        <input hidden type="checkbox" id="nav-mobile-check" class="nav-input" />
+        <label for="nav-mobile-check" class="nav-overlay"></label>
+      </div>
       <section class="page-header">
         <div class="container">
           <div class="row">
@@ -178,10 +179,11 @@
           </div>
         </div>
       </section>
+
       <section class="main-content blog-posts">
         <div class="container">
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-lg-8 col-12">
               <div class="post-wrap">
                 <article class="entry">
                   <div class="feature-post">
@@ -352,7 +354,7 @@
                 </article>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-12">
               <div class="sidebar-area">
                 <div class="primary-sidebar widget-area">
                   <div class="widet-search">
@@ -640,5 +642,7 @@
         </div>
       </div>
     </div>
+
+    <!-- Overlay Mobile -->
   </body>
 </html>
