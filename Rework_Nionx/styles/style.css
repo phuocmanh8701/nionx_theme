@@ -7,7 +7,7 @@
 **/
 
 /**
-    [===] cai nay la Bo
+    [===] cai nay la Cha
     [---] cai nay la Con
     * Color
     * Topbar
@@ -93,7 +93,6 @@
 
 /* <=== Header === */
 .header-inner {
-    /* position: fixed; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,8 +101,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.main-header-inner {
 }
 .logo {
     margin-left: 50px;
@@ -176,6 +173,7 @@
 .header-infor-item > a > i {
     transition: all 0.5s ease-in-out;
 }
+
 /* -- Header Sub Nav -- */
 .header-sub-nav {
     display: none;
@@ -322,8 +320,6 @@
     line-height: 30px;
     text-align: left;
     color: black;
-
-    /* -Hover css gach chan- */
     background-image: linear-gradient(to right, #fff 0%, #fff 100%);
     background-size: 0 2px;
     background-position: 0 100%;
@@ -570,16 +566,12 @@
     margin: 20px 0px;
 }
 .lastest-item-image > img {
-    /* height: 100%;
-    padding: 0 5px; */
     transition: filter 0.4s ease-in-out;
 }
 .lastest-item-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: center; */
-    /* text-align: left; */
     padding-left: 20px;
 }
 .lastest-item-meta > a {
@@ -729,7 +721,6 @@
 }
 .navigation-menu-footer > li > a {
     color: #a49eb5;
-    /* position: relative; */
     background-image: linear-gradient(to right, #fff 0%, #fff 100%);
     background-size: 0 1px;
     background-position: 0 100%;
@@ -772,6 +763,7 @@
     justify-content: center;
 }
 /* === Footer ===> */
+
 /* <=== Hover === */
 .entry-meta > a:hover {
     color: #5f2dde;
@@ -805,21 +797,6 @@
 .widget-lastest-list > li:hover .lastest-item-image > img {
     filter: brightness(0.5);
 }
-/* .lastest-item-title::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 1px;
-    bottom: -1px;
-    left: 0;
-    background-color: #000000;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-}
-.lastest-item-title:hover::after {
-    visibility: visible;
-    width: 100%;
-} */
 .lastest-item-title > a:hover {
     background-size: 100% 2px;
 }
@@ -861,6 +838,7 @@
 .header-nav-item > a:hover {
     color: black;
 }
+
 /* -- Hover Button Contact Us -- */
 .header-right-contact:hover {
     background-color: #5f2dde;
@@ -880,6 +858,7 @@
 .header-infor-item > a > i:hover {
     color: black;
 }
+
 /* -- Hover Page Header -- */
 .nionx-breadcrumb > li > a:hover {
     color: #5f2dde;
@@ -913,25 +892,6 @@
 .list-social > li:hover > a > i {
     color: #5f2dde;
 }
-/*.navigation-menu-footer > li > a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 1px;
-    bottom: -1px;
-    left: 0;
-    background-color: #ffffff;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-}
-.navigation-menu-footer > li > a:hover {
-    color: white;
-    transition: color 1s ease;
-}
-.navigation-menu-footer > li > a:hover::after {
-    visibility: visible;
-    width: 100%;
-} */
 .navigation-menu-footer > li > a:hover {
     background-size: 100% 1px;
 }
@@ -997,8 +957,6 @@
     display: none;
 }
 .header-mobile > i {
-    /* height: 28px;
-    width: 28px; */
     color: rgb(0, 0, 0);
     padding-left: 10px;
 }
@@ -1008,7 +966,6 @@
 }
 
 .nav-mobile-close {
-    /* position: absolute; */
 }
 .nav-item-moblie {
     padding: 20px 0px;
@@ -1020,9 +977,7 @@
 }
 .nav-mobile {
     position: fixed;
-    /* display: none; */
     justify-content: space-between;
-
     display: none;
     /* justify-content: space-between; */
     top: 0;
