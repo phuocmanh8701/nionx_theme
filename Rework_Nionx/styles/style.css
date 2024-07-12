@@ -540,6 +540,11 @@
 }
 .entry-meta > span {
     padding-right: 15px;
+    /* font-family: Plus Jakarta Sans; */
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
 }
 .entry-meta > span > i {
     padding-right: 3px;
@@ -555,7 +560,7 @@
     text-align: left;
 }
 .entry-description {
-    font-family: Plus Jakarta Sans;
+    /* font-family: Plus Jakarta Sans; */
     font-size: 16px;
     font-weight: 600;
     line-height: 30px;
@@ -1096,11 +1101,42 @@
 /* Mobile >-- */
 
 /* --<Blog SideBar */
-
-
-
+.entry-read-more {
+    /* padding: 14px 40px 14px 40px; */
+    padding-top: 39px;
+    gap: 10px;
+    border-radius: 6px;
+    display: flex;
+}
+.entry-read-more > a {
+    /* font-family: Instrument Sans; */
+    background-color: #f4f2f9;
+    color: #6c6a72;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.52px;
+    padding: 18px 40px;
+    /* text-align: left; */
+}
+/* Pagination */
+.nav-pagination > ul {
+    padding-top: 80px;
+}
+.nav-pagination > ul > li {
+    padding-right: 16px;
+}
+.nav-pagination > ul > li > a {
+    /* font-family: Instrument Sans; */
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 47px;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    background-color: #5f2dde;
+    border-radius: 6px;
+}
 /* Blog SideBar>-- */
-
 
 /* --test-- */
 .over-lay {
