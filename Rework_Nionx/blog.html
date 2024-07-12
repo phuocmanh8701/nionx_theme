@@ -33,7 +33,7 @@
                 <i class="fa-solid fa-location-dot"></i>
                 <span>30 Commercial Road Fratton, Australia</span>
               </li>
-              <li class="topbar-infor-email">
+              <li class="topbar-email">
                 <i class="fa-solid fa-envelope"></i>
                 <span>needhelp@company.com</span>
               </li>
@@ -84,10 +84,38 @@
                     <li class="sub-nav-item"><a href="#">Service</a></li>
                   </ul>
                 </li>
-                <li class="header-nav-item"><a href="#">Pages</a></li>
-                <li class="header-nav-item"><a href="#">Shop</a></li>
-                <li class="header-nav-item"><a href="#">Blog</a></li>
-                <li class="header-nav-item"><a href="#">Contact</a></li>
+                <li class="header-nav-item">
+                  <a href="#">Pages</a>
+                  <ul class="header-sub-nav">
+                    <li class="sub-nav-item"><a href="#">Pages</a></li>
+                    <li class="sub-nav-item"><a href="#">Pages</a></li>
+                    <li class="sub-nav-item"><a href="#">Pages</a></li>
+                  </ul>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">Shop</a>
+                  <ul class="header-sub-nav">
+                    <li class="sub-nav-item"><a href="#">Shop</a></li>
+                    <li class="sub-nav-item"><a href="#">Shop</a></li>
+                    <li class="sub-nav-item"><a href="#">Shop</a></li>
+                  </ul>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">Blog</a>
+                  <ul class="header-sub-nav">
+                    <li class="sub-nav-item"><a href="#">Blog</a></li>
+                    <li class="sub-nav-item"><a href="#">Blog</a></li>
+                    <li class="sub-nav-item"><a href="#">Blog</a></li>
+                  </ul>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">Contact</a>
+                  <ul class="header-sub-nav">
+                    <li class="sub-nav-item"><a href="#">Contact</a></li>
+                    <li class="sub-nav-item"><a href="#">Contact</a></li>
+                    <li class="sub-nav-item"><a href="#">Contact</a></li>
+                  </ul>
+                </li>
               </ul>
             </nav>
             <div class="header-right">
@@ -106,34 +134,36 @@
                   <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                   <a href="#"><i class="fa-regular fa-circle-user"></i></a>
                 </div>
-                <div class="header-mobile">
+                <label for="nav-mobile-check" class="header-mobile">
                   <i class="fa-solid fa-bars fa-2xl"></i>
-                </div>
+                </label>
               </div>
             </div>
             <label for="nav-mobile-check" class="header-mobile-2">
               <i class="fa-solid fa-bars fa-2xl"></i>
             </label>
             <!-- Header Mobile -->
-            <nav class="nav-mobile">
-              <ul class="nav-list-mobile">
-                <li class="nav-item-moblie"><a href="#">Home</a></li>
-                <li class="nav-item-moblie"><a href="#">Service</a></li>
-                <li class="nav-item-moblie"><a href="#">About</a></li>
-                <li class="nav-item-moblie"><a href="#">Pages</a></li>
-                <li class="nav-item-moblie"><a href="#">Shop</a></li>
-                <li class="nav-item-moblie"><a href="#">Blog</a></li>
-                <li class="nav-item-moblie"><a href="#">Contact</a></li>
-              </ul>
-              <label for="nav-mobile-check" class="nav-mobile-close">
-                <i class="fa-solid fa-x fa-xl" style="color: #fff"></i>
-              </label>
-              <input type="checkbox" id="nav-mobile-check" />
-            </nav>
           </div>
         </div>
       </header>
-
+      <div class="header-mb">
+        <nav class="nav-mobile">
+          <ul class="nav-list-mobile">
+            <li class="nav-item-moblie"><a href="#">Home</a></li>
+            <li class="nav-item-moblie"><a href="#">Service</a></li>
+            <li class="nav-item-moblie"><a href="#">About</a></li>
+            <li class="nav-item-moblie"><a href="#">Pages</a></li>
+            <li class="nav-item-moblie"><a href="#">Shop</a></li>
+            <li class="nav-item-moblie"><a href="#">Blog</a></li>
+            <li class="nav-item-moblie"><a href="#">Contact</a></li>
+          </ul>
+          <label for="nav-mobile-check" class="nav-mobile-close">
+            <i class="fa-solid fa-x fa-xl" style="color: #fff"></i>
+          </label>
+        </nav>
+        <input hidden type="checkbox" id="nav-mobile-check" class="nav-input" />
+        <label for="nav-mobile-check" class="nav-overlay"></label>
+      </div>
       <section class="page-header">
         <div class="container">
           <div class="row">
@@ -149,6 +179,7 @@
           </div>
         </div>
       </section>
+
       <section class="flat-section">
         <div class="container">
           <div class="row">
