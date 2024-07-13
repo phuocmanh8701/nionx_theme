@@ -69,7 +69,7 @@
     cursor: pointer;
     padding-right: 30px;
 }
-.topbar-infor-email > span {
+.topbar-email > span {
     position: relative;
 }
 .topbar-right {
@@ -725,7 +725,7 @@
     background-size: 0 1px;
     background-position: 0 100%;
     background-repeat: no-repeat;
-    transition: background-size 0.3s ease;
+    transition: all 0.3s ease;
 }
 .sub-content > input {
     width: 370px;
@@ -819,7 +819,7 @@
 .topbar-social > li > a > i:hover {
     color: #5f2dde;
 }
-.topbar-infor-email > span::after {
+.topbar-email > span::after {
     content: "";
     position: absolute;
     width: 0;
@@ -830,9 +830,12 @@
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
-.topbar-infor-email > span:hover::after {
+.topbar-email > span:hover::after {
     visibility: visible;
     width: 100%;
+}
+.topbar-email > span:hover {
+    color: black;
 }
 
 .header-nav-item > a:hover {
@@ -893,6 +896,7 @@
     color: #5f2dde;
 }
 .navigation-menu-footer > li > a:hover {
+    color: white;
     background-size: 100% 1px;
 }
 .button-subcribe::after {

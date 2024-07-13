@@ -1,0 +1,5 @@
+-- tren cung topbar: left, right tuy` (neu co) 
+-- > header: left, inner(nav, sub-nav-lv1, sub-nav-lv2,.. ), right
+///// 
+-- > page header : breadcrumb(title, list )  (neu co)
+-- > page main: tuy section va dat ten khac nhau
