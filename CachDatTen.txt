@@ -1,5 +1,31 @@
--- tren cung topbar: left, right tuy` (neu co) 
--- > header: left, inner(nav, sub-nav-lv1, sub-nav-lv2,.. ), right
+* = tuy
+-- tren cung topbar: left, right * (list) (neu co)
+-- > header: left, inner(nav, sub-nav-lv1, sub-nav-lv2,.. (list)), right
 ///// 
 -- > page header : breadcrumb(title, list )  (neu co)
--- > page main: tuy section va dat ten khac nhau
+-- > page main: tuy section(tren nav) va dat ten khac nhau *
+-->> cart
+-->> sidebar (widget): search, category, tags,...
+	(page nao co thi gan) (list)*
+-->> pagination:
+...
+/////
+-- > footer: top(left:logo, right:social(list) )*, 
+	inner(or main or middle):widget (title<h> + list<il><li> )*,
+	bottom (no copy <p>)
+----------------------------------------
+hieu BOOSTRAP 5
+-- container, col don vi giong nhau --
+		 <576	≥576px	≥768px	≥992px	≥1200px	≥1400px	
+.container	 100%	540px	720px	960px	1140px	1320px
+.container-sm	 100%	540px	720px	960px	1140px	1320px
+.container-md	 100%	100%	720px	960px	1140px	1320px
+.container-lg	 100%	100%	100%	960px	1140px	1320px
+.container-xl	 100%	100%	100%	100%	1140px	1320px
+.container-xxl	 100%	100%	100%	100%	100%	1320px
+.container-fluid 100%	100%	100%	100%	100%	100%
+
+
+
+
+
