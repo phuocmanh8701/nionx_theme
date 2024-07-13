@@ -15,7 +15,7 @@
 	bottom (no copy <p>)
 ----------------------------------------
 hieu BOOSTRAP 5
--- container, col don vi giong nhau --
+-- container, col(12 cot) don vi giong nhau --
 		 <576	≥576px	≥768px	≥992px	≥1200px	≥1400px	
 .container	 100%	540px	720px	960px	1140px	1320px
 .container-sm	 100%	540px	720px	960px	1140px	1320px
