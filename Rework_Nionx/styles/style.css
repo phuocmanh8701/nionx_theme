@@ -1060,3 +1060,51 @@
     }
 }
 /* === Mobile ===> */
+/* <=== Custom Cursor === */
+
+/* Main cursor */
+.custom-cursor__cursor {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid var(--nionx-base, #5f2dde);
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 5px), -50%);
+    z-index: 999991;
+}
+
+/* Inner cursor */
+.custom-cursor__cursor-two {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--nionx-base, #5f2dde);
+    opacity: 0.3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition:
+        width 0.3s,
+        height 0.3s,
+        opacity 0.3s;
+    z-index: 999991;
+}
+
+/* Cursor hover state */
+.custom-cursor__hover {
+    background-color: var(--nionx-base, #5f2dde);
+    opacity: 0.4;
+}
+
+/* Inner cursor click state */
+.custom-cursor__innerhover {
+    width: 25px;
+    height: 25px;
+    opacity: 0.4;
+}
+
+/* === Custom Cursor ===> */

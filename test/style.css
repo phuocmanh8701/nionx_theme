@@ -1,55 +1,44 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.header {
+/* Main cursor */
+.custom-cursor__cursor {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid var(--nionx-base, #5f2dde);
+    transition: all 200ms ease-out;
     position: fixed;
-    top: 0;
+    pointer-events: none;
     left: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    z-index: 1000; /* Đảm bảo thanh header luôn trên cùng */
-    padding: 10px 0;
+    top: 0;
+    transform: translate(calc(-50% + 5px), -50%);
+    z-index: 999991;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
+/* Inner cursor */
+.custom-cursor__cursor-two {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--nionx-base, #5f2dde);
+    opacity: 0.3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition:
+        width 0.3s,
+        height 0.3s,
+        opacity 0.3s;
+    z-index: 999991;
 }
 
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+/* Cursor hover state */
+.custom-cursor__hover {
+    background-color: var(--nionx-base, #5f2dde);
+    opacity: 0.4;
 }
 
-.navbar li {
-    margin: 0 15px;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-.navbar a:hover {
-    background-color: #575757;
-    border-radius: 5px;
-}
-
-main {
-    padding-top: 60px; /* Khoảng trống để bù vào chiều cao của header */
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
+/* Inner cursor click state */
+.custom-cursor__innerhover {
+    width: 25px;
+    height: 25px;
+    opacity: 0.4;
 }

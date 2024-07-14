@@ -1,19 +1,32 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const cursor = document.querySelector(".cursor");
-  const cursorClick = document.querySelector(".cursor-click");
+document.addEventListener("DOMContentLoaded", function () {
+  if (document.querySelector(".custom-cursor")) {
+    var cursor = document.querySelector(".custom-cursor__cursor");
+    var cursorInner = document.querySelector(".custom-cursor__cursor-two");
+    var links = document.querySelectorAll("a");
 
-  document.addEventListener("mousemove", (e) => {
-    cursor.style.left = `${e.clientX}px`;
-    cursor.style.top = `${e.clientY}px`;
-    cursorClick.style.left = `${e.clientX}px`;
-    cursorClick.style.top = `${e.clientY}px`;
-  });
+    document.addEventListener("mousemove", function (e) {
+      cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`;
+      cursorInner.style.left = `${e.clientX}px`;
+      cursorInner.style.top = `${e.clientY}px`;
+    });
 
-  document.addEventListener("mousedown", () => {
-    cursorClick.style.transform = "translate(-50%, -50%) scale(1)";
-  });
+    document.addEventListener("mousedown", function () {
+      cursor.classList.add("click");
+      cursorInner.classList.add("custom-cursor__innerhover");
+    });
 
-  document.addEventListener("mouseup", () => {
-    cursorClick.style.transform = "translate(-50%, -50%) scale(0)";
-  });
+    document.addEventListener("mouseup", function () {
+      cursor.classList.remove("click");
+      cursorInner.classList.remove("custom-cursor__innerhover");
+    });
+
+    links.forEach((link) => {
+      link.addEventListener("mouseover", () => {
+        cursor.classList.add("custom-cursor__hover");
+      });
+      link.addEventListener("mouseleave", () => {
+        cursor.classList.remove("custom-cursor__hover");
+      });
+    });
+  }
 });
