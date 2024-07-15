@@ -277,7 +277,7 @@ ol {
 }
 
 img {
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
 }
 
@@ -394,7 +394,7 @@ input[type="color"] {
     width: 100%;
     font-style: italic;
     font-size: 14px;
-    border: 1px solid #e5e5e5;
+    /* border: 1px solid #e5e5e5; */
     color: #a0a0a0;
     background-color: transparent;
     height: 50px;

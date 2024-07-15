@@ -510,17 +510,22 @@
 .form-email {
     width: 100%;
 }
-.form-control {
+.form-control,
+.form-name,
+.form-email {
     border: none;
     padding: 0px;
     margin-bottom: 10px;
     background-color: #f4f2f9;
     border-radius: 20px;
 }
-.form-control > input {
+/* .form-control > input {
     border-radius: 20px;
     background-color: #f4f2f9;
-}
+} */
+ #message{
+    padding: 12px 0 0 28px;
+ }
 #submit {
     width: 216px;
     height: 56px;
@@ -563,7 +568,7 @@
 /* -- Widget Lastest Post -- */
 .lastest-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 20px 0px;
 }
 .lastest-item-image > img {
@@ -634,6 +639,7 @@
     display: flex;
     padding-bottom: 30px;
     transition: color 1s ease-in-out;
+    align-items: center;
 }
 .cmt-icon {
     display: flex;
@@ -649,9 +655,9 @@
     color: #6c6a72;
     transition: backgroucolor 0.4s ease-in-out;
 }
-.cmt-chat {
+/* .cmt-chat {
     width: 285px;
-}
+} */
 .cmt-chat > a {
     color: #6c6a72;
     font-size: 16px;
@@ -1091,7 +1097,7 @@
         width 0.3s,
         height 0.3s,
         opacity 0.3s;
-    z-index: 999991;
+    z-index: 99999;
 }
 
 /* Cursor hover state */

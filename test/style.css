@@ -1,44 +1,52 @@
-/* Main cursor */
-.custom-cursor__cursor {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: 1px solid var(--nionx-base, #5f2dde);
-    transition: all 200ms ease-out;
-    position: fixed;
-    pointer-events: none;
-    left: 0;
+/* Container for the image */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the image */
+.image-container img {
+    display: block;
+    width: 100%;
+    transition: opacity 0.8s ease;
+}
+
+/* Overlay that appears on hover */
+.overlay {
+    position: absolute;
     top: 0;
-    transform: translate(calc(-50% + 5px), -50%);
-    z-index: 999991;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Inner cursor */
-.custom-cursor__cursor-two {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--nionx-base, #5f2dde);
-    opacity: 0.3;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
+/* Plus sign */
+.plus {
+    color: white;
+    font-size: 48px;
+    opacity: 0;
+    transform: translateY(-100%);
     transition:
-        width 0.3s,
-        height 0.3s,
-        opacity 0.3s;
-    z-index: 999991;
+        opacity 0.8s ease,
+        transform 0.8s ease;
 }
 
-/* Cursor hover state */
-.custom-cursor__hover {
-    background-color: var(--nionx-base, #5f2dde);
-    opacity: 0.4;
+/* Hover effect */
+.image-container:hover img {
+    opacity: 0.3;
 }
 
-/* Inner cursor click state */
-.custom-cursor__innerhover {
-    width: 25px;
-    height: 25px;
-    opacity: 0.4;
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.image-container:hover .plus {
+    opacity: 1;
+    transform: translateY(0);
 }
